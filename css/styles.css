@@ -1,5 +1,7 @@
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 a {
@@ -51,6 +53,10 @@ body {
   color: #000000;
   padding-left: 24px;
 }
+
+.current {
+  color: #ff6464;
+}
 /* Hero */
 .hero {
   display: flex;
@@ -81,6 +87,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   line-height: 2.2;
+  cursor: pointer;
 
   color: #ffffff;
   background-color: #ff6464;
@@ -182,7 +189,7 @@ body {
 }
 
 .works-list {
-    padding: 0px;
+  padding: 0px;
 }
 
 .work-item {
@@ -254,4 +261,20 @@ body {
   padding-top: 24px;
   padding-bottom: 75px;
   margin-left: 10px;
+}
+
+/* LINK WORK */
+.work-title,
+.blog-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  padding-left: 16px;
+}
+/* Blog */
+.blog-container {
+  max-width: 800px;
+  padding: 0px 15px;
+  margin: 0 auto;
 }
