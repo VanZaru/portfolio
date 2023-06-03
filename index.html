@@ -1,132 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <a href="./index.html">
-        <img src="./images/logo/logo.png" alt="Site logo" />
-      </a>
-      <nan>
-        <ul>
-          <li>
-            <a href="./blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="./work.html">Work</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nan>
-    </header>
-    <!-- Main -->
-    <main>
-      <!-- Hero -->
-      <section>
-        <h1>Hi, I’m John! Creative Technologist</h1>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button type="button">Check my Work</button>
-        <img src="./images/hero/photo.png" alt="my photo" width="252" height="255" />
-      </section>
-      <!-- Posts secion -->
-      <section>
-        <h2>Recent Posts</h2>
-        <a href="./blog.html">View all</a>
-        <div>
-          <ul>
-          <li>
-            <h3>Post Title</h3>
-            <time datetime="2021-02-12">12 Feb 21</time>
-            <span>&#124</span>
-            <span>Design System</span>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="./index.html">
+          <img  class="logo" src="./images/logo/logo.png" alt="Site logo" />
+        </a>
+      </div>
+      <div class="header-right">
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="menu-item" class="menu-item">
+              <a class="menu-link" href="./work.html">Work</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+      <div class="container">
+        <section class="hero">
+          <div class="hero-content">
+            <h1 class="hero-title">Hi, I’m John!<br/> Creative Technologist</h1>
+            <p class="hero-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam consequat sunt nostrud amet.
             </p>
-          </li>
-          <li>
-            <h3>Post Title</h3>
-            <time datetime="2021-02-12">12 Feb 21</time>
-            <span>&#124</span>
-            <span>Design System</span>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-        </ul>
+            <button class="hero-btn" type="button">Check my Work</button>
+          </div>
+          <div class="hero-img"><img src="./images/hero/photo.png" alt="my photo" width="252" height="255" /></div>
+        </section>
+      </div>
+    <!-- Posts section -->
+    <section class="posts">
+      <div class="container">
+          <div class="posts-header">
+            <h2 class="posts-title">Recent Posts</h2>
+            <a class="post-link" href="./blog.html">View all</a>
+          </div>      
+          <ul class="posts-list">
+            <div class="post">
+              <li>
+                <h3 class="post-title">Post Title</h3>
+                <time class="post-time" datetime="2021-02-12">12 Feb 21</time>
+                <span>&#124</span>
+                <span class="post-type">Design System</span>
+                <p class="post-content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </li>
+            </div>
+            <div class="post modifier">
+              <li>
+                <h3 class="post-title">Post Title</h3>
+                <time class="post-time" datetime="2021-02-12">12 Feb 21</time>
+                <span>&#124</span>
+                <span class="post-type">Design System</span>
+                <p class="post-content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </li>
+            </div>
+          </ul>
+      </div>
+    </section>
+    <!-- Work section-->
+    <section class="works">
+      <div class="container">
+        <div class="works-header">
+          <h2 class="works-title">Featured Work</h2>
+          <a class="works-link" href="./work.html">View all</a>
         </div>
-      </section>
-      <!-- Work section-->
-      <section>
-        <h2>Featured Work</h2>
-        <a href="./work.html">View all</a>
-        <ul>
-          <li>
-            <img src="./images/work/work-one.png" alt="examples work" width="275" height="213"/>
-            <div>
-               <h3>Designing Dashboards</h3>
-               <p>
-                  <time datetime="2020">2020</time>
-                  <span>Dashboard</span>
-               </p>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            </div>
+        <ul class="works-list">
+          <li class="work-item">
+            <img class="card-img" src="./images/work/work-one.png" alt="examples work" width="275" height="213" />
+              <div class="work-card">
+                <h3 class="card-title">Designing Dashboards</h3>
+                <p>
+                  <time class="card-date" datetime="2020">2020</time>
+                  <span class="card-type">Dashboard</span>
+                </p>
+                <p class="card-content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
           </li>
-          <li>
-            <img src="./images/work/work-two.png" alt="examples work" width="275" height="213"/>
-            <div>
-              <h3>Vibrant Portraits</h3>
-              <time datetime="2018">2018</time>
-              <p>Illustration</p>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            </div>
+          <li class="work-item">
+            <img class="card-img" src="./images/work/work-two.png" alt="examples work" width="275" height="213" />
+              <div class="work-card">
+                <h3 class="card-title">Vibrant Portraits</h3>
+                <p>
+                  <time class="card-date" datetime="2018">2018</time>
+                  <span class="card-type">Illustration</span>
+                </p>
+                <p class="card-content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
           </li>
         </ul>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <ul>
-        <li>
-          <a href="http://figma.com" target="_blank" rel="noopener noreferrer">
-            <img src="images/social-icon/figma.png" alt="icon figma">
-          </a>
-        </li>
-        <li>
-          <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
-            <img src="images/social-icon/twitter.png" alt="icon twitter">
-          </a>
-        </li>
-        <li>
-          <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="images/social-icon/instagram.png" alt="icon instagram">
-          </a>
-        </li>
-      </ul>
-      <p>&copy 2022 Your Name. All rights reserved.</p>
-    </footer>
-  </body>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social">
+        <ul class="social-list">
+          <li>
+            <a class="social-link" href="http://figma.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/social-icon/figma.png" alt="icon figma">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/social-icon/twitter.png" alt="icon twitter">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/social-icon/instagram.png" alt="icon instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="copirait">&copy 2022 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
